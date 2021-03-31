@@ -169,7 +169,6 @@ function App() {
     setXPlayer(play);
     setHistory(JSON.parse(JSON.stringify(hCopy)));
     setSelected({ r: step.move.r, c: step.move.c })
-    setStatus('Next player: ' + (play ? 'X' : 'O'));
   }
 
   const moves = history.map((step, move) => {
